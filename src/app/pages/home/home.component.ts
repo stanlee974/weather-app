@@ -18,6 +18,10 @@ import {GetStartedComponent} from '@components/get-started/get-started.component
 export class HomeComponent implements OnInit {
   private route = inject(ActivatedRoute);
   isStarted = signal(false);
+  // showMoreInfo = false; // Removed
+  // toggleMoreInfo() { // Removed
+  //   this.showMoreInfo = !this.showMoreInfo; // Removed
+  // } // Removed
 
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
